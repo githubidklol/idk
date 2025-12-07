@@ -170,6 +170,7 @@ class PassGenWindow(QMainWindow):
             return 2
         return 3
 
+    #Analyse password strength
     def analyseStrength(self, password):
         hasChar, strength, prev1, prev2, count1, distinct1, distinct2 = [0 for _ in range(4)], 0, None, None, 0, 0, 0
         for id, c in enumerate(password):
