@@ -92,7 +92,7 @@ class PassGenWindow(QMainWindow):
         for id, input in enumerate(inputsInfo):
             if input == inputsInfo[0]: continue
             self.inputs[id] = QLineEdit()
-            self.inputs[id].setPlaceholderText("1 ~ 1000") if id<5 else self.inputs[id].setPlaceholderText("1 ~ 5000")
+            self.inputs[id].setPlaceholderText("0 ~ 1000") if id<5 else self.inputs[id].setPlaceholderText("0 ~ 5000")
             self.inputs[id].setFont(self.inputFont)
             self.grid.addWidget(self.inputs[id], 4, id)
 
